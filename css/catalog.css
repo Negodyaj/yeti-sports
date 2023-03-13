@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #E5E5E5;
+}
+
+.secondary-font {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: white;
+}
+header .container {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  gap: 50px;
+}
+header .nav-link {
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+}/*# sourceMappingURL=catalog.css.map */

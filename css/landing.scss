@@ -1,0 +1,32 @@
+@import 'common';
+
+.hero-section {
+  .container {
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-family: $secondary-font;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 117px;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-section-bottom {
+    width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 495px;
+  }
+
+  .hero-section-label {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.03em;
+  }
+}

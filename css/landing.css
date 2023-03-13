@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #E5E5E5;
+}
+
+.secondary-font {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: white;
+}
+header .container {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  gap: 50px;
+}
+header .nav-link {
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.hero-section .container {
+  padding-top: 100px;
+}
+.hero-section h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 117px;
+  letter-spacing: 0.03em;
+}
+.hero-section .hero-section-bottom {
+  width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 495px;
+}
+.hero-section .hero-section-label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.03em;
+}/*# sourceMappingURL=landing.css.map */
