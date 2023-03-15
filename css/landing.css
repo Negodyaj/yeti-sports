@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Gilroy";
+  font-weight: bold;
+  src: url("../assets/fonts/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../assets/fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-bold.woff2") format("woff2"), url("../assets/fonts/gilroy-bold.woff") format("woff"), url("../assets/fonts/gilroy-bold.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: url("../assets/fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
+  src: url("../assets/fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-medium.woff2") format("woff2"), url("../assets/fonts/gilroy-medium.woff") format("woff"), url("../assets/fonts/gilroy-medium.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/gilroy-regular.eot"); /* IE 9 Compatibility Mode */
+  src: url("../assets/fonts/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/gilroy-regular.woff2") format("woff2"), url("../assets/fonts/gilroy-regular.woff") format("woff"), url("../assets/fonts/gilroy-regular.ttf") format("truetype"); /* Safari, Android, iOS */
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +34,13 @@ body {
   max-width: 1540px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.common-section-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
 }
 
 header {
@@ -40,6 +64,9 @@ header .nav-link {
   line-height: 22px;
 }
 
+.hero-section {
+  position: relative;
+}
 .hero-section .container {
   padding-top: 100px;
 }
@@ -64,4 +91,46 @@ header .nav-link {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.03em;
+}
+.hero-section .background-container {
+  position: absolute;
+  top: 363px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  padding: 0 35px;
+}
+.hero-section .hero-image {
+  width: 100%;
+  height: 621px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-section {
+  margin-top: 120px;
+}
+
+.catalog-section {
+  margin-top: 190px;
+}
+.catalog-section .categories-grid {
+  padding: 0 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 103px 35px;
+}
+.catalog-section .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.catalog-section .grid-item.wide {
+  grid-column: span 2;
+}
+.catalog-section .grid-item.with-top-margin {
+  margin-top: 297px;
+}
+.catalog-section img {
+  width: 100%;
 }/*# sourceMappingURL=landing.css.map */
