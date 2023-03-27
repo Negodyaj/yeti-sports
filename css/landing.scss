@@ -73,10 +73,96 @@
   }
 
   .grid-item.with-top-margin {
-    margin-top: 297px;
+    margin-top: 50%;
   }
 
   img {
     width: 100%;
+  }
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-controls {
+  width: 240px;
+  border: 1px solid black;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.carousel-item {
+  width: 240px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .hero-section {
+    h1 {
+      font-size: 90px;
+      line-height: 105px;
+    }
+
+    .background-container {
+      top: 328px;
+    }
+  }
+}
+
+@media (max-width: 1440px) and (min-width:901px) {
+  .hero-section {
+    .container {
+      padding-top: 40px;
+    }
+
+    h1 {
+      font-size: 80px;
+      line-height: 94px;
+    }
+    
+    .background-container {
+      top: 168px;
+    }
+
+    .hero-image {
+      height: 563px;
+    }
+
+    .hero-section-bottom {
+      margin-top: 376px;
+      width: 895px;
+    }
+
+    .hero-section-label {
+      font-size: 35px;
+      line-height: 41px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    overflow: hidden;
+  }
+
+  .catalog-section .categories-grid {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+  }
+
+  .catalog-section .grid-item.with-top-margin {
+    margin-top: 0;
+  }
+
+  .catalog-section img {
+    height: 350px;
+    width: 65.6vw;
+    object-fit: cover;
   }
 }

@@ -64,6 +64,41 @@ header .nav-link {
   line-height: 22px;
 }
 
+@media (min-width: 901px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .container {
+    max-width: 1370px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+  header nav {
+    gap: 40px;
+  }
+}
+@media (max-width: 900px) {
+  header nav {
+    position: absolute;
+    flex-direction: column;
+    right: -1px;
+    top: 130px;
+    background-color: white;
+    padding: 20px;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    gap: 25px;
+  }
+  header nav.visible {
+    transform: translateX(0);
+  }
+}
 .hero-section {
   position: relative;
 }
@@ -129,8 +164,80 @@ header .nav-link {
   grid-column: span 2;
 }
 .catalog-section .grid-item.with-top-margin {
-  margin-top: 297px;
+  margin-top: 50%;
 }
 .catalog-section img {
   width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-controls {
+  width: 240px;
+  border: 1px solid black;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.carousel-item {
+  width: 240px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+@media (min-width: 1441px) and (max-width: 1680px) {
+  .hero-section h1 {
+    font-size: 90px;
+    line-height: 105px;
+  }
+  .hero-section .background-container {
+    top: 328px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 901px) {
+  .hero-section .container {
+    padding-top: 40px;
+  }
+  .hero-section h1 {
+    font-size: 80px;
+    line-height: 94px;
+  }
+  .hero-section .background-container {
+    top: 168px;
+  }
+  .hero-section .hero-image {
+    height: 563px;
+  }
+  .hero-section .hero-section-bottom {
+    margin-top: 376px;
+    width: 895px;
+  }
+  .hero-section .hero-section-label {
+    font-size: 35px;
+    line-height: 41px;
+  }
+}
+@media (max-width: 900px) {
+  .hero-section {
+    overflow: hidden;
+  }
+  .catalog-section .categories-grid {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+  }
+  .catalog-section .grid-item.with-top-margin {
+    margin-top: 0;
+  }
+  .catalog-section img {
+    height: 350px;
+    width: 65.6vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=landing.css.map */
