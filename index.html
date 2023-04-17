@@ -22,7 +22,7 @@
         <a href="#" class="nav-link">ЛИЧНЫЙ КАБИНЕТ</a>
         <a href="#" class="nav-link">КОРЗИНА (0)</a>
       </nav>
-      <button class="burger-menu mobile-only">...</button>
+      <button class="burger-menu mobile-only" onclick="toggleMenu()">...</button>
     </div>
   </header>
   <section class="hero-section">
@@ -34,7 +34,10 @@
       </div>
     </div>
     <div class="background-container">
-      <img src="./assets/main-background.png" alt="Hero image" class="hero-image">
+      <picture>
+        <source media="(max-width: 900px)" srcset="./assets/main-background-mobile.png">
+        <img src="./assets/main-background.png" alt="Hero image" class="hero-image">
+      </picture>
       <div class="back-gradient"></div>
     </div>
   </section>
@@ -78,9 +81,12 @@
       </div>
     </div>
   </section>
-  <section style="display: none;">
+  <section>
     <div class="carousel-container">
-      <div class="carousel-controls"></div>
+      <div class="carousel-controls">
+        <button onclick="doLeftSlide()">left</button>
+        <button onclick="doRightSlide()">right</button>
+      </div>
       <div class="carousel-wrapper">
         <div class="carousel-item">1</div>
         <div class="carousel-item">2</div>
@@ -93,5 +99,7 @@
       </div>
     </div>
   </section>
+  <script src="./test.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

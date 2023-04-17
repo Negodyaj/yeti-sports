@@ -83,22 +83,40 @@
 
 .carousel-container {
   display: flex;
+  gap: 30px;
+  padding: 0 35px;
 }
 
 .carousel-controls {
   width: 240px;
   border: 1px solid black;
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  button {
+    font-size: 28px;
+    padding: 0 8px;
+  }
 }
 
 .carousel-wrapper {
   display: flex;
   gap: 15px;
+  overflow: hidden;
 }
 
 .carousel-item {
-  width: 240px;
+  width: 340px;
   height: 100px;
   border: 1px solid black;
+  flex-shrink: 0;
+
+  &:first-child {
+    margin-left: 0;
+    transition: margin-left .4s ease-in-out;
+  }
 }
 
 @media (min-width: 1441px) and (max-width: 1680px) {

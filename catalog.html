@@ -7,9 +7,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/catalog.css">
+  <title>YETI Sports - Catalog</title>
 </head>
 <body>
-  
+  <header>
+    <div class="container">
+      <img src="./assets/logo.svg" alt="Yeti logo">
+      <nav>
+        <a href="#" class="nav-link">О МАГАЗИНЕ</a>
+        <a href="catalog.html" class="nav-link">КАТАЛОГ</a>
+        <a href="#" class="nav-link">КОНТАКТЫ</a>
+        <a href="#" class="nav-link">ЛИЧНЫЙ КАБИНЕТ</a>
+        <a href="#" class="nav-link">КОРЗИНА (0)</a>
+      </nav>
+      <button class="burger-menu mobile-only">...</button>
+    </div>
+  </header>
+  <div class="container">
+
+    <div>
+      <h3>Sizes filter</h3>
+      <div class="options" style="display: flex; flex-direction: column;">
+        <label>
+          <input type="checkbox" name="size" value="S">
+          S
+        </label>
+        <label>
+          <input type="checkbox" name="size" value="M">
+          M
+        </label>
+        <label>
+          <input type="checkbox" name="size" value="L">
+          L
+        </label>
+        <label>
+          <input type="checkbox" name="size" value="XL">
+          XL
+        </label>
+      </div>
+      <button onclick="filterProductsBySize()">Filter</button>
+    </div>
+    <div class="products-grid">
+    </div>
+  </div>
+
+  <script src="./arrayMethods.js"></script>
 </body>
 </html>

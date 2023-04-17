@@ -1,0 +1,22 @@
+{
+  "name": "yeti-sports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Negodyaj/yeti-sports.git"
+  },
+  "author": "Antoshka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Negodyaj/yeti-sports/issues"
+  },
+  "homepage": "https://github.com/Negodyaj/yeti-sports#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
